@@ -19,7 +19,7 @@ set x = "hi"
 print(x)
 ```
 
-** Output: ** <br>
+**Output:** <br>
 ```plaintext
 hi
 ```
