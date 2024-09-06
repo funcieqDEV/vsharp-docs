@@ -1,4 +1,4 @@
-# `print(<expr)`
+# `print(<expr>)`
 
 ## Description
 The `print` function is used to print the value of the expression `<expr>` to the standard output (usually the console). <br> 
@@ -19,7 +19,7 @@ set x = "hi"
 print(x)
 ```
 
-**Output: **<br>
+**Output: ** <br>
 ```plaintext
 hi
 ```
@@ -30,7 +30,7 @@ set a = 5
 print(a+2-1)
 ```
 
-**output**<br>
+**Output**<br>
 
 ```plaintext
 6
