@@ -4,4 +4,6 @@
 we use `set` for declaring local and global variables, we can then use the declared variables in `<expr>`
 
 ## Syntax
-`set name = <expr>`
+```plaintext
+set name = <expr>
+```
