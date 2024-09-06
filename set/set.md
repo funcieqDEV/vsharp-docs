@@ -1,1 +1,1 @@
-# `set` **name** = `value`
+# `set **name** = value`
