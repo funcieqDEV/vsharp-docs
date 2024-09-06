@@ -27,4 +27,4 @@ hello, world
 hello, world my name is ...
 ```
 
-*as you can see, changing the value of an existing variable is done in the same way as its declaration, <br>except that it can still use its current value *
+*as you can see, changing the value of an existing variable is done in the same way as its declaration, <br>except that it can still use its current value*
