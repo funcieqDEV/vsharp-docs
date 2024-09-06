@@ -10,7 +10,7 @@ print(<expr>)
 ```
 
 ## Parameters
-<expr>: The expression whose value is to be displayed. This can be any expression that returns a value, including variables, literals, function calls( not yet for now :[ ), etc.<br>
+<expr>The expression whose value is to be displayed. This can be any expression that returns a value, including variables, literals, function calls( not yet for now :[ ), etc.<br>
 
 ## Examples
 # Displaying a variable:<br>
@@ -19,7 +19,7 @@ set x = "hi"
 print(x)
 ```
 
-**Output: ** <br>
+** Output: ** <br>
 ```plaintext
 hi
 ```
