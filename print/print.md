@@ -9,7 +9,7 @@ After using the function, the expression will be processed and its result will b
 print(<expr>)
 ```
 
-## Parameters
+## Parameters:
 <expr>The expression whose value is to be displayed. This can be any expression that returns a value, including variables, literals, function calls( not yet for now :[ ), etc.<br>
 
 ## Examples
@@ -35,6 +35,19 @@ print(a+2-1)
 ```plaintext
 6
 ```
+
+# Using multiple print statements: <br>
+```plaintext
+print("1")
+print("2")
+```
+
+**Output**<br>
+
+```plaintext
+12
+```
+
 
 
 
