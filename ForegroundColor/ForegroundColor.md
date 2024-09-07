@@ -26,14 +26,14 @@ ForegroundColor(color)
 
 ## Available colors
 
-<li>
-<ol>black</ol>
-<ol>red</ol>
-<ol>green</ol>
-<ol>yellow</ol>
-<ol>gray</ol>
-<ol>white</ol>
-<ol>cyan</ol>
-<ol>magenta</ol>
-<ol>darkgray</ol>
-</li>
+<ol>
+<li>black</li>
+<li>red</li>
+<li>green</li>
+<li>yellow</li>
+<li>gray</li>
+<li>white</li>
+<li>cyan</li>
+<li>magenta</li>
+<li>darkgray</li>
+</ol>
