@@ -23,3 +23,9 @@ ForegroundColor(color)
 ```
 
 *as you can see you can also use variables for this*
+
+## Available colors
+
+<li>
+<ol>black</ol>
+</li>
