@@ -28,4 +28,12 @@ ForegroundColor(color)
 
 <li>
 <ol>black</ol>
+<ol>red</ol>
+<ol>green</ol>
+<ol>yellow</ol>
+<ol>gray</ol>
+<ol>white</ol>
+<ol>cyan</ol>
+<ol>magenta</ol>
+<ol>darkgray</ol>
 </li>
