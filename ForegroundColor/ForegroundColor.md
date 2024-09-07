@@ -26,7 +26,7 @@ ForegroundColor(color)
 
 ## Available colors
 
-<ol>
+<ul>
 <li>black</li>
 <li>red</li>
 <li>green</li>
@@ -36,4 +36,4 @@ ForegroundColor(color)
 <li>cyan</li>
 <li>magenta</li>
 <li>darkgray</li>
-</ol>
+</ul>
