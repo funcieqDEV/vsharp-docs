@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation - V# DOCS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #a6bfd7; 
+            color: #222; 
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffffff; 
+            color: #3a8afc;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #4090ff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #000000;
+            margin: 0 15px; 
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s;
+            text-decoration: underline;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #3a8afc; 
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3a8afc;
+            border-bottom: 2px solid #3a8afc;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #e8e8e8; 
+            color: #222; 
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f7f7f7; 
+            color: #222; 
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Installation Guide for V#</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#requirements">System Requirements</a>
+    <a href="#installation-steps">Installation Steps</a>
+    <a href="#troubleshooting">Troubleshooting</a>
+</nav>
+
+<section id="requirements">
+    <h2>System Requirements</h2>
+    <p>Before installing V#, ensure your system meets the following requirements:</p>
+    <ul>
+        <li>Operating System: Windows, macOS, or Linux (for mac and linux you need to build project by yourself)</li>
+        <li>Processor: 1 GHz or faster</li>
+        <li>RAM: 2 GB minimum (4 GB recommended)</li>
+        <li>Disk Space: At least 100 MB free</li>
+        <li>.NET 8.0</li>
+        <li>Internet Connection: Required for downloading the interpreter</li>
+    </ul>
+</section>
+
+<section id="installation-steps">
+    <h2>Installation Steps</h2>
+    <ol>
+        <li>
+            <strong>Download the V# Interpreter:</strong>
+            <p>Visit the <a href="https://github.com/funcieqDEV/VSharp/">GitHub repository</a> and download the latest release for your operating system.</p>
+        </li>
+        <li>
+            <strong>Install the Interpreter:</strong>
+            <p>Follow the instructions based on your operating system:</p>
+            <ul>
+                <li><strong>Windows:</strong> Run the downloaded `install.bat` file and follow the `how_to_install.txt` instructions.</li>
+                <li><strong>macOS & Linux:</strong> download source then build the project.</li>
+               
+            </ul>
+        </li>
+
+        <li>
+            <strong>Verify the Installation:</strong>
+            <p>Open your terminal or command prompt and run:</p>
+            <pre><code>vsharp --version</code></pre>
+            <p>You should see the version number of V# displayed. If you see an error, check the troubleshooting section below.</p>
+        </li>
+    </ol>
+</section>
+
+<section id="troubleshooting">
+    <h2>Troubleshooting</h2>
+    <p>If you encounter any issues during installation, consider the following tips:</p>
+    <ul>
+        <li><strong>Installation Failed:</strong> Ensure you have downloaded the correct version for your OS.</li>
+        <li><strong>Command Not Found:</strong> Make sure that the V# executable is included in your system's PATH variable.</li>
+        <li><strong>Permissions Issues:</strong> Try running the installer as an administrator (Windows)</li>
+    </ul>
+    <p>If you continue to experience problems, feel free to reach out to our support team at <a>Discord: funcieq</a></p>
+</section>
+
+</body>
+</html>

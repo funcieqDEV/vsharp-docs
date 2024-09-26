@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn V#</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #222;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid #3a8afc;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #3a8afc;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3a8afc;
+            border-bottom: 2px solid #3a8afc;
+            padding-bottom: 10px;
+        }
+        pre {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn V#</h1>
+</header>
+
+<nav>
+    <a href="#variables">Variables</a>
+    <a href="#input-output">Input/Output</a>
+    <a href="#conditionals">Conditionals</a>
+</nav>
+
+<section id="variables">
+    <h2>Variables</h2>
+    <p>In V#, you can declare a variable using the <code>set</code> keyword.</p>
+    <pre><code>set age = 0</code></pre>
+</section>
+
+<section id="input-output">
+    <h2>Input/Output</h2>
+    <p>To output data to the console, use <code>IO.Println</code>. To get user input, use <code>IO.Input</code>.</p>
+    <pre><code>IO.Println("How old are you?")
+set age = Convert.ToInt(IO.Input())</code></pre>
+</section>
+
+<section id="conditionals">
+    <h2>Conditionals</h2>
+    <p>You can use <code>if</code> statements to control the flow based on conditions.</p>
+    <pre><code>if(age >= 18) {
+    println("nice you are an adult")
+} else {
+    println("you are not an adult")
+}</code></pre>
+</section>
+
+</body>
+</html>
