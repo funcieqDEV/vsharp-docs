@@ -1,94 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Learn V#</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #a6bfd7; 
-            color: #222; 
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background-color: #ffffff; 
-            color: #3a8afc;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 4px solid #3a8afc;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #000000;
-            margin: 0 15px; 
-            font-size: 18px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #3a8afc; 
-        }
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #3a8afc;
-            border-bottom: 2px solid #3a8afc;
-            padding-bottom: 10px;
-        }
-        pre {
-            background-color: #f7f7f7; 
-            color: #222; 
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>Learn V#</h1>
+    </header>
 
-<header>
-    <h1>Learn V#</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-</nav>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
 
     <ul>
-        <li><a href="#variables">Variables</a></li>
-        <li><a href="#input-output">Input/Output</a></li>
-        <li><a href="#conditionals">Conditionals</a></li>
-        <li><a href="#objects">Objects</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#input-output">Input/Output</a></li>
+      <li><a href="#conditionals">Conditionals</a></li>
+      <li><a href="#objects">Objects</a></li>
     </ul>
 
+    <section id="variables">
+      <h2>Variables</h2>
+      <p>
+        In V#, you can declare a variable using the <code>set</code> keyword.
+      </p>
+      <h4>int</h4>
+      <pre><code>set age = 0</code></pre>
+      <h4>string</h4>
+      <pre><code>set name = "my name"</code></pre>
+      <h4>float</h4>
+      <pre><code>set age = 0.34</code></pre>
+    </section>
 
-<section id="variables">
-    <h2>Variables</h2>
-    <p>In V#, you can declare a variable using the <code>set</code> keyword.</p>
-    <h4>int</h4>
-    <pre><code>set age = 0</code></pre>
-    <h4>string</h4>
-    <pre><code>set name = "my name"</code></pre>
-    <h4>float</h4>
-    <pre><code>set age = 0.34</code></pre>
-
-</section>
-
-<section id="input-output">
-    <h2>Input/Output</h2>
-    <p>To output data to the console, use <code>IO.Println</code>. To get user input, use <code>IO.Input</code>.</p>
-    <pre><code>io.println("How old are you?")
+    <section id="input-output">
+      <h2>Input/Output</h2>
+      <p>
+        To output data to the console, use <code>IO.Println</code>. To get user
+        input, use <code>IO.Input</code>.
+      </p>
+      <pre><code>io.println("How old are you?")
 set age = Convert.ToInt(IO.Input())
 if(age >= 18){
     io.println("you are an adult")
@@ -97,21 +50,24 @@ else{
     io.println("you are still a child")
 }
 </code></pre>
-</section>
+    </section>
 
-<section id="conditionals">
-    <h2>Conditionals</h2>
-    <p>You can use <code>if</code> statements to control the flow based on conditions.</p>
-    <pre><code>if(age >= 18) {
+    <section id="conditionals">
+      <h2>Conditionals</h2>
+      <p>
+        You can use <code>if</code> statements to control the flow based on
+        conditions.
+      </p>
+      <pre><code>if(age >= 18) {
     io.println("nice you are an adult")
 } else {
     io.println("you are not an adult")
 }</code></pre>
-</section>
+    </section>
 
-<section id="objects">
-    <h2>Objects</h2>
-    <pre><code>
+    <section id="objects">
+      <h2>Objects</h2>
+      <pre><code>
         set Player = [
             name = "Tom",
             age = 23,
@@ -124,7 +80,7 @@ else{
         Player.stats()
     </code></pre>
 
-    <section id="functions">
+      <section id="functions">
         <h2>Functions</h2>
         <pre><code>
             func Greater(a,b){
@@ -142,9 +98,9 @@ else{
             io.println(Greater(a,c))
         </code></pre>
         <p>as you can see you dont need <b>return</b> keyword</p>
-    </section>
+      </section>
 
-    <section id="import">
+      <section id="import">
         <h2>imports</h2>
         <h5>lib.vshrp</h5>
         <pre>
@@ -160,9 +116,9 @@ else{
             import "lib.vshrp"
             helo()
         </code></pre>
-    </section>
+      </section>
 
-    <section id="Arrays-lists">
+      <section id="Arrays-lists">
         <h2>Arrays/lists</h2>
         <pre><code>
             set x = [5,6,3,5,7,2]
@@ -177,9 +133,9 @@ else{
         </code></pre>
 
         <p>for is like foreach in C#</p>
-    </section>
+      </section>
 
-    <section id="for">
+      <section id="for">
         <pre>
             <code>
                 set x = [5,6,3,5,7,2]
@@ -189,8 +145,7 @@ else{
                 }
             </code>
         </pre>
-
+      </section>
     </section>
-</section>
-</body>
+  </body>
 </html>
