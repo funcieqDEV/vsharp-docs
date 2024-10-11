@@ -63,26 +63,39 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="#variables">Variables</a>
-    <a href="#input-output">Input/Output</a>
-    <a href="#conditionals">Conditionals</a>
 </nav>
+
+    <ul>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#input-output">Input/Output</a></li>
+        <li><a href="#conditionals">Conditionals</a></li>
+    </ul>
+
 
 <section id="variables">
     <h2>Variables</h2>
     <p>In V#, you can declare a variable using the <code>set</code> keyword.</p>
-    <pre><code>
-set age = 0
-set name = "Tom"
-set pi = 3.14
-</code></pre>
+    <h4>int</h4>
+    <pre><code>set age = 0</code></pre>
+    <h4>string</h4>
+    <pre><code>set name = "my name"</code></pre>
+    <h4>float</h4>
+    <pre><code>set age = 0.34</code></pre>
+
 </section>
 
 <section id="input-output">
     <h2>Input/Output</h2>
     <p>To output data to the console, use <code>IO.Println</code>. To get user input, use <code>IO.Input</code>.</p>
     <pre><code>IO.Println("How old are you?")
-set age = Convert.ToInt(IO.Input())</code></pre>
+set age = Convert.ToInt(IO.Input())
+if(age >= 18){
+    IO.Println("you are an adult")
+}
+else{
+    IO.Println("you are still a child")
+}
+</code></pre>
 </section>
 
 <section id="conditionals">
@@ -95,5 +108,40 @@ set age = Convert.ToInt(IO.Input())</code></pre>
 }</code></pre>
 </section>
 
+<section id="objects">
+    <h2>Objects</h2>
+    <pre><code>
+        set Player = [
+            name = "Tom",
+            age = 23,
+
+            stats = func(){
+                IO.Println("name: "+Player.name+" age: "+Player.age)
+            }
+        ]
+
+        Player.stats()
+    </code></pre>
+
+    <section id="functions">
+        <h2>Functions</h2>
+        <pre><code>
+            func Greater(a,b){
+                if(Convert.ToInt(a) > Convert.ToInt(b)){
+                    a
+                }
+                else {
+                    b
+                }
+            }
+
+            set a = 5
+            set c = 4
+
+            IO.Println(Greater(a,c))
+        </code></pre>
+        <p>as you can see you dont need <b>return</b> keyword</p>
+    </section>
+</section>
 </body>
 </html>
