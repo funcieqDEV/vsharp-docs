@@ -87,13 +87,13 @@
 <section id="input-output">
     <h2>Input/Output</h2>
     <p>To output data to the console, use <code>IO.Println</code>. To get user input, use <code>IO.Input</code>.</p>
-    <pre><code>IO.Println("How old are you?")
+    <pre><code>io.println("How old are you?")
 set age = Convert.ToInt(IO.Input())
 if(age >= 18){
-    IO.Println("you are an adult")
+    io.println("you are an adult")
 }
 else{
-    IO.Println("you are still a child")
+    io.println("you are still a child")
 }
 </code></pre>
 </section>
@@ -102,9 +102,9 @@ else{
     <h2>Conditionals</h2>
     <p>You can use <code>if</code> statements to control the flow based on conditions.</p>
     <pre><code>if(age >= 18) {
-    println("nice you are an adult")
+    io.println("nice you are an adult")
 } else {
-    println("you are not an adult")
+    io.println("you are not an adult")
 }</code></pre>
 </section>
 
@@ -116,7 +116,7 @@ else{
             age = 23,
 
             stats = func(){
-                IO.Println("name: "+Player.name+" age: "+Player.age)
+                io.println("name: "+Player.name+" age: "+Player.age)
             }
         ]
 
@@ -128,19 +128,36 @@ else{
         <pre><code>
             func Greater(a,b){
                 if(Convert.ToInt(a) > Convert.ToInt(b)){
-                    a
+                    return a
                 }
                 else {
-                    b
+                    return b
                 }
             }
 
             set a = 5
             set c = 4
 
-            IO.Println(Greater(a,c))
+            io.println(Greater(a,c))
         </code></pre>
         <p>as you can see you dont need <b>return</b> keyword</p>
+    </section>
+
+    <section id="import">
+        <h2>imports</h2>
+        <h5>lib.vshrp</h5>
+        <pre>
+            <code>
+                func helo(){
+                    io.println("hello")
+                }
+            </code>
+        </pre>
+
+        <h5>main.vshrp</h5>
+        <pre><code>
+            helo()
+        </code></pre>
     </section>
 </section>
 </body>
