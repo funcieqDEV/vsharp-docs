@@ -28,11 +28,17 @@
         In V#, you can declare a variable using the <code>set</code> keyword.
       </p>
       <h4>int</h4>
-      <pre><code>set age = 0</code></pre>
+      <pre><code>
+        set age = 0
+        set a = 5*5-3+67
+      </code></pre>
       <h4>string</h4>
-      <pre><code>set name = "my name"</code></pre>
+      <pre><code>
+        set name = "my name"
+        set name2 = name+name
+      </code></pre>
       <h4>float</h4>
-      <pre><code>set age = 0.34</code></pre>
+      <pre><code>set age = 0.34*3.8</code></pre>
     </section>
 
     <section id="input-output">
@@ -69,14 +75,17 @@ else{
       <h2>Objects</h2>
       <pre><code>
         set Player = [
-            name = "Tom",
+            name = "Tom", //  use Player.name to acces that varaible
             age = 23,
 
             stats = func(){
                 io.println("name: "+Player.name+" age: "+Player.age)
-            }
+            },
+            new = func(){
+              return Player
+            } //if it is last elemnt you dont need to put ,
         ]
-
+        set b = Player.new()
         Player.stats()
     </code></pre>
 
@@ -144,6 +153,18 @@ else{
                     io.println(item) // prints any item in x array
                 }
             </code>
+        </pre>
+      </section>
+
+      <section id="while">
+        <pre>
+          <code>
+            set i = 0
+            while(i<= 100){ // you need to use conditions
+              io.println(i)
+              set i = i +1 
+            }
+          </code>
         </pre>
       </section>
     </section>
