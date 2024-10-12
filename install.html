@@ -1,106 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Installation - V# DOCS</title>
-  </head>
-  <body>
-    <header>
-      <h1>Installation Guide for V#</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install V#</title>
+    <link rel="stylesheet" href="install-style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Install V#</h1>
+            <p>Follow these steps to get started with V# on your machine</p>
+        </div>
     </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#requirements">System Requirements</a>
-      <a href="#installation-steps">Installation Steps</a>
-      <a href="#troubleshooting">Troubleshooting</a>
+    <nav class="main-nav">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/funcieqDEV/VSharp/">GitHub</a>
+            <a href="learn.html">Learn</a>
+        </div>
     </nav>
 
-    <section id="requirements">
-      <h2>System Requirements</h2>
-      <p>
-        Before installing V#, ensure your system meets the following
-        requirements:
-      </p>
-      <ul>
-        <li>
-          Operating System: Windows, macOS, or Linux (for mac and linux you need
-          to build project by yourself)
-        </li>
-        <li>Processor: 1 GHz or faster</li>
-        <li>RAM: 2 GB minimum (4 GB recommended)</li>
-        <li>Disk Space: At least 100 MB free</li>
-        <li>.NET 8.0</li>
-        <li>Internet Connection: Required for downloading the interpreter</li>
-      </ul>
+    <section class="install-steps">
+        <div class="container">
+            <h2>Step-by-Step Installation Guide</h2>
+            <p>
+                To begin working with V#, follow the instructions below to install it on your system.
+            </p>
+
+            <div class="step">
+                <h3>1. Install .NET 7.0</h3>
+                <p>
+                    V# requires .NET 7.0 to run. If you haven't already installed it, download and install
+                    it from the official <a href="https://dotnet.microsoft.com/download/dotnet/7.0">.NET download page</a>.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>2. Download V# from GitHub</h3>
+                <p>
+                    Head over to the <a href="https://github.com/funcieqDEV/VSharp/">V# GitHub repository</a> and clone or download the latest version of the language.
+                    You can clone the repository with this command:
+                </p>
+                <pre><code>git clone https://github.com/funcieqDEV/VSharp.git</code></pre>
+            </div>
+
+            <div class="step">
+                <h3>3. Run the Installation Script</h3>
+                <p>
+                    Navigate to the directory where you cloned the repository and run the installation script. This will install
+                    all necessary dependencies and set up V# for you.
+                </p>
+                <pre><code>cd VSharp
+./install.sh</code></pre>
+            </div>
+
+            <div class="step">
+                <h3>4. Verify the Installation</h3>
+                <p>
+                    Once the installation is complete, verify that V# is properly installed by running:
+                </p>
+                <pre><code>vsharp --version</code></pre>
+                <p>If the installation was successful, this will display the version of V# installed on your system.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="installation-steps">
-      <h2>Installation Steps</h2>
-      <ol>
-        <li>
-          <strong>Download the V# Interpreter:</strong>
-          <p>
-            Visit the
-            <a href="https://github.com/funcieqDEV/VSharp/"
-              >GitHub repository</a
-            >
-            and download the latest release for your operating system.
-          </p>
-        </li>
-        <li>
-          <strong>Install the Interpreter:</strong>
-          <p>Follow the instructions based on your operating system:</p>
-          <ul>
-            <li>
-              <strong>Windows:</strong> Run the downloaded `install.bat` file
-              and follow the `how_to_install.txt` instructions.
-            </li>
-            <li>
-              <strong>macOS & Linux:</strong> download source then build the
-              project.
-            </li>
-          </ul>
-        </li>
+    <section class="post-install">
+        <div class="container">
+            <h2>Next Steps</h2>
+            <p>
+                Congratulations! You've successfully installed V#. You can now start creating projects and exploring the language's capabilities.
+                Here are some useful resources to help you get started:
+            </p>
 
-        <li>
-          <strong>Verify the Installation:</strong>
-          <p>Open your terminal or command prompt and run:</p>
-          <pre><code>vsharp --version</code></pre>
-          <p>
-            You should see the version number of V# displayed. If you see an
-            error, check the troubleshooting section below.
-          </p>
-        </li>
-      </ol>
+            <div class="resource">
+                <h3>Learn V#</h3>
+                <p>
+                    Dive into the <a href="learn.html">Learn V# guide</a> to familiarize yourself with the basics of the language and its syntax.
+                </p>
+            </div>
+
+            <div class="resource">
+                <h3>GitHub Repository</h3>
+                <p>
+                    Explore the <a href="https://github.com/funcieqDEV/VSharp/">V# GitHub repository</a> for more information, community projects, and contributions.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="troubleshooting">
-      <h2>Troubleshooting</h2>
-      <p>
-        If you encounter any issues during installation, consider the following
-        tips:
-      </p>
-      <ul>
-        <li>
-          <strong>Installation Failed:</strong> Ensure you have downloaded the
-          correct version for your OS.
-        </li>
-        <li>
-          <strong>Command Not Found:</strong> Make sure that the V# executable
-          is included in your system's PATH variable.
-        </li>
-        <li>
-          <strong>Permissions Issues:</strong> Try running the installer as an
-          administrator (Windows)
-        </li>
-      </ul>
-      <p>
-        If you continue to experience problems, feel free to reach out to our
-        support team at <a>Discord: funcieq</a>
-      </p>
-    </section>
-  </body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 V# Documentation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

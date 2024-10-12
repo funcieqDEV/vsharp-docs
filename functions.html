@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Learn V#</title>
+    <title>Functions - Learn V#</title>
   </head>
   <body>
     <header>
-      <h1>Learn V#</h1>
+      <h1>Functions in V#</h1>
     </header>
 
     <div class="container">
       <!-- Side navigation -->
       <nav>
-        <a href="index.html">Home</a>
+        <a href="learn.html">Home</a>
         <a href="variables.html">Variables</a>
         <a href="io.html">Input/Output</a>
         <a href="conditionals.html">Conditionals</a>
@@ -28,14 +28,23 @@
 
       <!-- Main content -->
       <div class="content">
-        <section id="home">
-          <h2>Welcome to Learn V#</h2>
-          <p>
-            V# is a simple and dynamic programming language that allows you to create applications easily. This guide will help you learn the basics, from variables to more advanced topics like objects and functions.
-          </p>
-          <p>
-            Use the navigation bar on the left to explore different topics.
-          </p>
+        <section id="functions">
+          <h2>Functions</h2>
+          <pre><code>
+            func Greater(a,b){
+                if(Convert.ToInt(a) > Convert.ToInt(b)){
+                    return a
+                }
+                else {
+                    return b
+                }
+            }
+
+            set a = 5
+            set c = 4
+
+            io.println(Greater(a,c))
+        </code></pre>
         </section>
 
         <footer>

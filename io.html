@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Learn V#</title>
+    <title>Input/Output - Learn V#</title>
   </head>
   <body>
     <header>
-      <h1>Learn V#</h1>
+      <h1>Input/Output in V#</h1>
     </header>
 
     <div class="container">
       <!-- Side navigation -->
       <nav>
-        <a href="index.html">Home</a>
+        <a href="learn.html">Home</a>
         <a href="variables.html">Variables</a>
         <a href="io.html">Input/Output</a>
         <a href="conditionals.html">Conditionals</a>
@@ -28,14 +28,18 @@
 
       <!-- Main content -->
       <div class="content">
-        <section id="home">
-          <h2>Welcome to Learn V#</h2>
+        <section id="io">
+          <h2>Input/Output</h2>
           <p>
-            V# is a simple and dynamic programming language that allows you to create applications easily. This guide will help you learn the basics, from variables to more advanced topics like objects and functions.
+            In V#, you can use <code>io.print</code> to display output and <code>io.input</code> to get user input.
           </p>
-          <p>
-            Use the navigation bar on the left to explore different topics.
-          </p>
+          <pre><code>io.println("How old are you?")
+set age = Convert.ToInt(io.input())
+if(age >= 18){
+    io.println("You are an adult")
+} else {
+    io.println("You are still a child")
+}</code></pre>
         </section>
 
         <footer>
